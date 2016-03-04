@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:HellGlow.xcodeproj">
+      location = "self:HellGlow World.xcodeproj">
    </FileRef>
 </Workspace>

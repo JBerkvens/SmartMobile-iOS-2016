@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3F33E4B41C89BE1C00B0C80E"
-               BuildableName = "HellGlow.app"
-               BlueprintName = "HellGlow"
-               ReferencedContainer = "container:HellGlow.xcodeproj">
+               BlueprintIdentifier = "3FE121AC1C89BFBA00696FF7"
+               BuildableName = "HellGlow World"
+               BlueprintName = "HellGlow World"
+               ReferencedContainer = "container:HellGlow World.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,34 +28,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3F33E4C81C89BE1D00B0C80E"
-               BuildableName = "HellGlowTests.xctest"
-               BlueprintName = "HellGlowTests"
-               ReferencedContainer = "container:HellGlow.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3F33E4D31C89BE1D00B0C80E"
-               BuildableName = "HellGlowUITests.xctest"
-               BlueprintName = "HellGlowUITests"
-               ReferencedContainer = "container:HellGlow.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3F33E4B41C89BE1C00B0C80E"
-            BuildableName = "HellGlow.app"
-            BlueprintName = "HellGlow"
-            ReferencedContainer = "container:HellGlow.xcodeproj">
+            BlueprintIdentifier = "3FE121AC1C89BFBA00696FF7"
+            BuildableName = "HellGlow World"
+            BlueprintName = "HellGlow World"
+            ReferencedContainer = "container:HellGlow World.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3F33E4B41C89BE1C00B0C80E"
-            BuildableName = "HellGlow.app"
-            BlueprintName = "HellGlow"
-            ReferencedContainer = "container:HellGlow.xcodeproj">
+            BlueprintIdentifier = "3FE121AC1C89BFBA00696FF7"
+            BuildableName = "HellGlow World"
+            BlueprintName = "HellGlow World"
+            ReferencedContainer = "container:HellGlow World.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3F33E4B41C89BE1C00B0C80E"
-            BuildableName = "HellGlow.app"
-            BlueprintName = "HellGlow"
-            ReferencedContainer = "container:HellGlow.xcodeproj">
+            BlueprintIdentifier = "3FE121AC1C89BFBA00696FF7"
+            BuildableName = "HellGlow World"
+            BlueprintName = "HellGlow World"
+            ReferencedContainer = "container:HellGlow World.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

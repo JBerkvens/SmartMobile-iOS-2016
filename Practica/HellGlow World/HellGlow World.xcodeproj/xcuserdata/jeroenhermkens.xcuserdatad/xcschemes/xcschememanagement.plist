@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>HellGlow.xcscheme</key>
+		<key>HellGlow World.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3F33E4B41C89BE1C00B0C80E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3F33E4C81C89BE1D00B0C80E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3F33E4D31C89BE1D00B0C80E</key>
+		<key>3FE121AC1C89BFBA00696FF7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
