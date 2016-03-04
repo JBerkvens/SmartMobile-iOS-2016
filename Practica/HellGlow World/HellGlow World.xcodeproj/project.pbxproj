@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3FE121B11C89BFBA00696FF7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE121B01C89BFBA00696FF7 /* main.swift */; };
+		3FE121BA1C89C3DC00696FF7 /* GlowAct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE121B91C89C3DC00696FF7 /* GlowAct.swift */; };
+		3FE121BC1C89C3E500696FF7 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE121BB1C89C3E500696FF7 /* City.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		3FE121AD1C89BFBA00696FF7 /* HellGlow World */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "HellGlow World"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE121B01C89BFBA00696FF7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3FE121B91C89C3DC00696FF7 /* GlowAct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlowAct.swift; sourceTree = "<group>"; };
+		3FE121BB1C89C3E500696FF7 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				3FE121B01C89BFBA00696FF7 /* main.swift */,
+				3FE121B91C89C3DC00696FF7 /* GlowAct.swift */,
+				3FE121BB1C89C3E500696FF7 /* City.swift */,
 			);
 			path = "HellGlow World";
 			sourceTree = "<group>";
@@ -120,6 +126,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FE121B11C89BFBA00696FF7 /* main.swift in Sources */,
+				3FE121BA1C89C3DC00696FF7 /* GlowAct.swift in Sources */,
+				3FE121BC1C89C3E500696FF7 /* City.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

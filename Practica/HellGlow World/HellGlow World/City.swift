@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  City.swift
 //  HellGlow World
 //
 //  Created by Jeroen Berkvens on 04/03/16.
@@ -8,5 +8,8 @@
 
 import Foundation
 
-print("HellGlow, World!")
-
+class City {
+    var name:String?
+    var population:Int?
+    var glowActs:NSArray?
+}
