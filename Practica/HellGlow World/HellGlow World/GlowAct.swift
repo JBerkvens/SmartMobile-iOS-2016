@@ -9,11 +9,11 @@
 import Foundation
 
 class GlowAct {
-    var name:String?
-    var rating:Int?
-    var startTime:String?
+    var name:String!
+    var rating:Int!
+    var startTime:String!
     
     func showInfo() {
-        print("The act is called \(name) and starts at \(startTime). It is given an average rating of \(rating).")
+        print("The act is called \"\(name)\" and starts at \(startTime). It is given an average rating of \(rating).")
     }
 }
