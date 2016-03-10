@@ -12,4 +12,8 @@ class City {
     var name:String?
     var population:Int?
     var glowActs:NSArray?
+    
+    func showInfo() {
+        print("In the city of \(name) there are currently living \(population) people.")
+    }
 }
