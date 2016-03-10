@@ -18,12 +18,15 @@ extension Array
         }
     }
 }
+var artNames = ["Sequence with Design", "My Element of Despair", "Evolving Sadness", "Impression of Instant Intensity", "Echo vs Concept", "Meditative Plan", "Happy Bachelor - Warm Chromatic", "Uplifting Ellipse of Death", "The Shimmering Intensity", "Nude Desiring an Umbrella", "Mind-Bending Sketch of Effective Exclusion", "The Vanishing Interior", "Crippled Analysis", "Dance in Redhead"];
+artNames.shuffle();
 
 print("HellGlow, World!\n");
 
-var artNames = ["Sequence with Design", "My Element of Despair", "Evolving Sadness", "Impression of Instant Intensity", "Echo vs Concept", "Meditative Plan", "Happy Bachelor - Warm Chromatic", "Uplifting Ellipse of Death", "The Shimmering Intensity", "Nude Desiring an Umbrella", "Mind-Bending Sketch of Effective Exclusion", "The Vanishing Interior", "Crippled Analysis", "Dance in Redhead"];
-artNames.shuffle();
-var glowActs = [GlowAct]();
+var eindhoven = City();
+eindhoven.name = "Eindhoven";
+eindhoven.population = 216036;
+
 for i in 0...Int(arc4random_uniform(10)+2) {
     var glowAct = GlowAct()
     glowAct.name = artNames[i];
@@ -43,11 +46,6 @@ for i in 0...Int(arc4random_uniform(10)+2) {
         startMinuteString = "\(startMinute)";
     }
     glowAct.startTime = "\(startHourString):\(startMinuteString)";
-    glowActs.append(glowAct);
+    eindhoven.glowActs.append(glowAct);
 }
-
-var eindhoven = City();
-eindhoven.name = "Eindhoven";
-eindhoven.population = 216036;
-eindhoven.glowActs = glowActs;
 eindhoven.showAllInfo();

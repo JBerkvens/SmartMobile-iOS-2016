@@ -11,7 +11,7 @@ import Foundation
 class City {
     var name:String!
     var population:Int!
-    var glowActs:NSArray?
+    var glowActs = [GlowAct]();
     
     func showAllInfo() {
         showBasicInfo();
@@ -23,9 +23,8 @@ class City {
     }
     
     func showActs() {
-        print("The following acts are shown in \(name): ");
-        for glowAct in glowActs! {
-            let glowAct = glowAct as! GlowAct;
+        print("The following \(glowActs.count) acts are shown in \(name): ");
+        for glowAct in glowActs {
             print("\t" + glowAct.getActInfo());
         }
     }
