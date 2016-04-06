@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F341FFF1C9A8EE700F2E679 /* ProfilePicture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F341FFE1C9A8EE700F2E679 /* ProfilePicture.jpg */; };
+		3F3420011C9ADE6500F2E679 /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3420001C9ADE6500F2E679 /* GeneralViewController.swift */; };
+		3F3420031C9ADFAF00F2E679 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3420021C9ADFAF00F2E679 /* AboutViewController.swift */; };
+		3F3420051C9ADFCA00F2E679 /* EasterEggViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3420041C9ADFCA00F2E679 /* EasterEggViewController.swift */; };
+		3F3420071C9ADFE100F2E679 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3420061C9ADFE100F2E679 /* DetailsViewController.swift */; };
+		3F3420091C9AE01200F2E679 /* MoreDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3420081C9AE01200F2E679 /* MoreDetailsViewController.swift */; };
 		3FFEB4331C91AC2600F60A09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFEB4321C91AC2600F60A09 /* AppDelegate.swift */; };
 		3FFEB4351C91AC2600F60A09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFEB4341C91AC2600F60A09 /* ViewController.swift */; };
 		3FFEB4381C91AC2600F60A09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFEB4361C91AC2600F60A09 /* Main.storyboard */; };
 		3FFEB43A1C91AC2600F60A09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FFEB4391C91AC2600F60A09 /* Assets.xcassets */; };
 		3FFEB43D1C91AC2600F60A09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFEB43B1C91AC2600F60A09 /* LaunchScreen.storyboard */; };
+		3FFEB4451C92F98700F60A09 /* server.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FFEB4441C92F98700F60A09 /* server.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F341FFE1C9A8EE700F2E679 /* ProfilePicture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ProfilePicture.jpg; sourceTree = "<group>"; };
+		3F3420001C9ADE6500F2E679 /* GeneralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
+		3F3420021C9ADFAF00F2E679 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		3F3420041C9ADFCA00F2E679 /* EasterEggViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasterEggViewController.swift; sourceTree = "<group>"; };
+		3F3420061C9ADFE100F2E679 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		3F3420081C9AE01200F2E679 /* MoreDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreDetailsViewController.swift; sourceTree = "<group>"; };
 		3FFEB42F1C91AC2600F60A09 /* glow2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = glow2015.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFEB4321C91AC2600F60A09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FFEB4341C91AC2600F60A09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +35,7 @@
 		3FFEB4391C91AC2600F60A09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FFEB43C1C91AC2600F60A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FFEB43E1C91AC2600F60A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FFEB4441C92F98700F60A09 /* server.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = server.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +68,19 @@
 		3FFEB4311C91AC2600F60A09 /* glow2015 */ = {
 			isa = PBXGroup;
 			children = (
+				3F341FFE1C9A8EE700F2E679 /* ProfilePicture.jpg */,
+				3FFEB4441C92F98700F60A09 /* server.jpg */,
 				3FFEB4321C91AC2600F60A09 /* AppDelegate.swift */,
 				3FFEB4341C91AC2600F60A09 /* ViewController.swift */,
 				3FFEB4361C91AC2600F60A09 /* Main.storyboard */,
 				3FFEB4391C91AC2600F60A09 /* Assets.xcassets */,
 				3FFEB43B1C91AC2600F60A09 /* LaunchScreen.storyboard */,
 				3FFEB43E1C91AC2600F60A09 /* Info.plist */,
+				3F3420001C9ADE6500F2E679 /* GeneralViewController.swift */,
+				3F3420021C9ADFAF00F2E679 /* AboutViewController.swift */,
+				3F3420041C9ADFCA00F2E679 /* EasterEggViewController.swift */,
+				3F3420061C9ADFE100F2E679 /* DetailsViewController.swift */,
+				3F3420081C9AE01200F2E679 /* MoreDetailsViewController.swift */,
 			);
 			path = glow2015;
 			sourceTree = "<group>";
@@ -122,6 +143,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FFEB4451C92F98700F60A09 /* server.jpg in Resources */,
+				3F341FFF1C9A8EE700F2E679 /* ProfilePicture.jpg in Resources */,
 				3FFEB43D1C91AC2600F60A09 /* LaunchScreen.storyboard in Resources */,
 				3FFEB43A1C91AC2600F60A09 /* Assets.xcassets in Resources */,
 				3FFEB4381C91AC2600F60A09 /* Main.storyboard in Resources */,
@@ -135,8 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F3420051C9ADFCA00F2E679 /* EasterEggViewController.swift in Sources */,
+				3F3420011C9ADE6500F2E679 /* GeneralViewController.swift in Sources */,
 				3FFEB4351C91AC2600F60A09 /* ViewController.swift in Sources */,
+				3F3420091C9AE01200F2E679 /* MoreDetailsViewController.swift in Sources */,
+				3F3420031C9ADFAF00F2E679 /* AboutViewController.swift in Sources */,
 				3FFEB4331C91AC2600F60A09 /* AppDelegate.swift in Sources */,
+				3F3420071C9ADFE100F2E679 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +314,7 @@
 				3FFEB4431C91AC2600F60A09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

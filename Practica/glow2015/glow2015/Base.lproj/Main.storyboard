@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="U1b-hT-awF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="U1b-hT-awF">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Test-->
         <scene sceneID="E1b-H4-6dk">
             <objects>
-                <viewController title="Test" id="u6P-OG-PlY" sceneMemberID="viewController">
+                <viewController title="Test" id="u6P-OG-PlY" customClass="DetailsViewController" customModule="glow2015" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FQN-ab-hyv"/>
                         <viewControllerLayoutGuide type="bottom" id="gXT-hC-hho"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Qfk-yv-bz9">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="glow2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWr-wA-7rT">
+                                <rect key="frame" x="317" y="72" width="135" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5rZ-sh-1yQ">
+                                <rect key="frame" x="264" y="124" width="240" height="98"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">This is some extra information about the glow2015 app. This app is made as part of a larger collection for the iOS innovation at Fontys Universities - ICT.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32a-7k-jzH">
+                                <rect key="frame" x="255" y="230" width="259" height="30"/>
+                                <state key="normal" title="More about Fontys - ICT"/>
+                                <connections>
+                                    <segue destination="89e-t4-rai" kind="push" id="daJ-Va-mg9"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="VpC-dd-7gQ"/>
@@ -25,65 +49,469 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LNy-YK-OQe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2015" y="695"/>
+            <point key="canvasLocation" x="2579" y="1186"/>
         </scene>
-        <!--View Controller-->
+        <!--More Details View Controller-->
         <scene sceneID="YEB-cV-l5l">
             <objects>
-                <viewController id="89e-t4-rai" sceneMemberID="viewController">
+                <viewController id="89e-t4-rai" customClass="MoreDetailsViewController" customModule="glow2015" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wMQ-7N-tsG"/>
                         <viewControllerLayoutGuide type="bottom" id="S7e-sX-i5c"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fTS-Ei-98M">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bachelor ICT &amp; Software" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiv-xA-kPr">
+                                <rect key="frame" x="150" y="64" width="468" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i0Q-y5-gaa">
+                                <rect key="frame" x="20" y="137" width="728" height="99"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">This 4-year study programme is an international programme, leading to the international Bachelor degree in ICT. It is a university programme conducted in English intended for the professional field of Software Engineering. With the knowledge and skills found at Fontys University of Applied Sciences, in the faculty of ICT students can work as high-level engineers in the ICT sector. This programme leads to the International Bachelor of Science (BSc) degree in Information &amp; Communication Technology (croho: hbo-ict).
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="In the first year ICT offers theoretical subjects and practical laboratory training in several subjects." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lmh-fI-FkZ">
+                                <rect key="frame" x="20" y="302" width="240" height="83"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What will you do at ICT &amp; Software?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RM1-95-aK8">
+                                <rect key="frame" x="20" y="244" width="292" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1st year of study" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEW-X9-a1i">
+                                <rect key="frame" x="20" y="273" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2nd year of study (core phase)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brj-4D-2N1">
+                                <rect key="frame" x="20" y="393" width="249" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="In the second year in depth software engineering subjects are given." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nEG-uz-xp5">
+                                <rect key="frame" x="20" y="422" width="240" height="67"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="03i-zj-tyP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6IR-fh-6e2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2833" y="695"/>
+            <point key="canvasLocation" x="3626" y="1186"/>
         </scene>
         <!--About-->
         <scene sceneID="atL-0C-xuP">
             <objects>
-                <viewController title="About" id="VgF-Zl-OTf" sceneMemberID="viewController">
+                <viewController title="About" id="VgF-Zl-OTf" customClass="AboutViewController" customModule="glow2015" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="20e-cj-7Fy"/>
                         <viewControllerLayoutGuide type="bottom" id="DRQ-AF-ANg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BQl-of-4xr">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jsc-lT-dFl">
+                                <rect key="frame" x="20" y="20" width="984" height="699"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aIn-iN-Xhl">
+                                        <rect key="frame" x="0.0" y="-9" width="984" height="1275"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jeroen (John) Berkvens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpd-T7-jgs">
+                                                <rect key="frame" x="300" y="8" width="420" height="37"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ProfilePicture.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ah6-7C-yTD">
+                                                <rect key="frame" x="8" y="8" width="240" height="240"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stagiaire at I-FourC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKX-te-2lo">
+                                                <rect key="frame" x="300" y="53" width="182" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eindhoven, Provincie Noord-Brabant, Netherlands" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAg-4V-hHo">
+                                                <rect key="frame" x="300" y="82" width="349" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kh7-H6-Yjg">
+                                                <rect key="frame" x="300" y="140" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Previous" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDT-Ao-Ztf">
+                                                <rect key="frame" x="300" y="169" width="57" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All Terrain, I-FourC, Fontys Hogescholen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WZ-Rj-Uvk">
+                                                <rect key="frame" x="365" y="140" width="239" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PSfm Werkt, Think and Go, Symbiosis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rvu-2J-YJj">
+                                                <rect key="frame" x="365" y="169" width="222" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fontys Hogeschool Eindhoven" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WiD-C3-iwu">
+                                                <rect key="frame" x="365" y="198" width="183" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="| Computer Software" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uB6-jZ-OsZ">
+                                                <rect key="frame" x="315" y="111" width="143" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SL-sd-R3S">
+                                                <rect key="frame" x="8" y="284" width="139" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Web Developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j65-BR-ZZp">
+                                                <rect key="frame" x="8" y="352" width="195" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All Terrain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0a-02-h0n">
+                                                <rect key="frame" x="8" y="392" width="98" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="April 2015 – Present (1 year) | Eindhoven Area, Netherlands" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKF-AJ-rfb">
+                                                <rect key="frame" x="8" y="421" width="596" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Secretary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3y2-Um-cdJ">
+                                                <rect key="frame" x="8" y="542" width="195" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All Terrain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9Q-wL-X2k">
+                                                <rect key="frame" x="8" y="582" width="98" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="April 2015 – Present (1 year) | Eindhoven Area, Netherlands" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UY4-D6-FkZ">
+                                                <rect key="frame" x="8" y="611" width="596" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aql-gj-Wwu">
+                                                <rect key="frame" x="8" y="640" width="712" height="163"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">AllTerrain is the first student all terrain sports club and as Secretary I'm responsible for internal and external communication, file management, management of the member registration and making the minutes for the GA's and board meetings.
+I'm also in the WebCommission where I'm responsible for designing the website, managing the server, managing the email accounts, managing site content and managing the infrastructure.
+
+I'm also in some committees including the web-committee for which I setup a server (including webserver, mailserver, DNS and a database that automatically adds the new members that subscribe for mailing lists on our site to the correct mailing lists on the webserver) and I build the site (based on Wordpress).</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="w3s-y2-RkX">
+                                                <rect key="frame" x="8" y="450" width="712" height="47"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">I build the website on a WordPress CMS and based the theme on i-Max. Than I wrote a lot of extra functionality specifically for All Terrain and build them into the site.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0l-3m-A7q">
+                                                <rect key="frame" x="617" y="417" width="103" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="webDeveloperShowDetails"/>
+                                                <state key="normal" title="Show Details"/>
+                                                <connections>
+                                                    <action selector="showDetails:" destination="VgF-Zl-OTf" eventType="touchUpInside" id="Of0-be-YTG"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Student Supervisor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCt-xL-9qM">
+                                                <rect key="frame" x="8" y="848" width="224" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fontys Hogescholen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vh1-Nc-GYE">
+                                                <rect key="frame" x="8" y="888" width="188" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="November 2012 – Present (3 years 5 months) | Eindhoven Area, Netherlands" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8Z-S4-tcQ">
+                                                <rect key="frame" x="8" y="917" width="596" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="As Student Supervisor I am responsible for one class, and helps them if they run into some problems or have some questions." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RWv-NI-RQg">
+                                                <rect key="frame" x="8" y="946" width="712" height="48"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afm-dF-9gL">
+                                                <rect key="frame" x="617" y="913" width="103" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="studentSupervisorShowDetails"/>
+                                                <state key="normal" title="Show Details"/>
+                                                <connections>
+                                                    <action selector="showDetails:" destination="VgF-Zl-OTf" eventType="touchUpInside" id="kgl-Ft-39c"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Intern" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vn1-IZ-iJa">
+                                                <rect key="frame" x="8" y="1039" width="224" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I-FourC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jum-PO-irD">
+                                                <rect key="frame" x="8" y="1079" width="188" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="September 2015 – February 2016 (6 months) | Reuver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITx-bL-Sc5">
+                                                <rect key="frame" x="8" y="1108" width="596" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="m21-r7-WE6">
+                                                <rect key="frame" x="8" y="1137" width="712" height="118"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">I have researched if HTML5 is ready to replace the current Viewer, and if so I was to develop a HTML Viewer. Unfortunately HTML5 wasn't ready yet for all requirements.
+Currently I'm researching if Xamarin is a viable option to create one viewer that is compatible with all devices (as HTML5 should have been). If this turns out to be true I will start developing the new viewer from scratch (also redesigning the interface and use-flow) for Windows Apps, iOS, Android, OS X, Windows Phone and Linux.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nP-Wl-XyN">
+                                                <rect key="frame" x="617" y="1104" width="103" height="30"/>
+                                                <state key="normal" title="Show Details"/>
+                                                <connections>
+                                                    <action selector="showDetails:" destination="VgF-Zl-OTf" eventType="touchUpInside" id="B3g-x6-jU7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sF3-E2-i5b">
+                                                <rect key="frame" x="300" y="194" width="57" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Education"/>
+                                                <connections>
+                                                    <segue destination="ZtF-mW-6X3" kind="modal" id="TVb-Sk-R1t"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6K-ub-Cy3">
+                                                <rect key="frame" x="617" y="607" width="103" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="secretaryShowDetails"/>
+                                                <state key="normal" title="Show Details"/>
+                                                <connections>
+                                                    <action selector="showDetails:" destination="VgF-Zl-OTf" eventType="touchUpInside" id="lWh-m3-SWL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1335" id="48W-yg-2l9"/>
+                                            <constraint firstItem="vn1-IZ-iJa" firstAttribute="top" secondItem="RWv-NI-RQg" secondAttribute="bottom" constant="45" id="CMI-VR-7gA"/>
+                                            <constraint firstAttribute="trailing" secondItem="w3s-y2-RkX" secondAttribute="trailing" constant="8" id="DKP-wg-xSB"/>
+                                            <constraint firstItem="rCt-xL-9qM" firstAttribute="top" secondItem="aql-gj-Wwu" secondAttribute="bottom" constant="45" id="K5W-on-suL"/>
+                                            <constraint firstAttribute="trailing" secondItem="V0l-3m-A7q" secondAttribute="trailing" constant="8" id="dp9-8U-T3d"/>
+                                            <constraint firstAttribute="trailing" secondItem="V0l-3m-A7q" secondAttribute="trailing" id="haX-3P-1MB"/>
+                                            <constraint firstItem="3y2-Um-cdJ" firstAttribute="top" secondItem="w3s-y2-RkX" secondAttribute="bottom" constant="45" id="nQM-vs-UfA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="aIn-iN-Xhl" secondAttribute="bottom" id="MDO-BU-rAO"/>
+                                    <constraint firstItem="aIn-iN-Xhl" firstAttribute="top" secondItem="jsc-lT-dFl" secondAttribute="top" id="QqM-ll-Lip"/>
+                                    <constraint firstItem="aIn-iN-Xhl" firstAttribute="leading" secondItem="jsc-lT-dFl" secondAttribute="leading" id="cKC-ne-K67"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DRQ-AF-ANg" firstAttribute="top" secondItem="jsc-lT-dFl" secondAttribute="bottom" id="7H7-Oh-vHH"/>
+                            <constraint firstItem="jsc-lT-dFl" firstAttribute="trailing" secondItem="BQl-of-4xr" secondAttribute="trailingMargin" id="9jk-GY-fO4"/>
+                            <constraint firstItem="jsc-lT-dFl" firstAttribute="top" secondItem="20e-cj-7Fy" secondAttribute="bottom" id="Mkb-uc-fPu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jsc-lT-dFl" secondAttribute="trailing" id="bqG-k4-HLe"/>
+                            <constraint firstItem="jsc-lT-dFl" firstAttribute="leading" secondItem="BQl-of-4xr" secondAttribute="leadingMargin" id="hlN-wp-9dO"/>
+                            <constraint firstItem="jsc-lT-dFl" firstAttribute="leading" secondItem="BQl-of-4xr" secondAttribute="leadingMargin" id="ipu-yX-dlV"/>
+                            <constraint firstItem="DRQ-AF-ANg" firstAttribute="top" secondItem="jsc-lT-dFl" secondAttribute="bottom" id="jBm-a2-mCl"/>
+                            <constraint firstItem="jsc-lT-dFl" firstAttribute="top" secondItem="20e-cj-7Fy" secondAttribute="bottom" id="wt0-jT-eUr"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="About" id="iDh-Ic-XEy"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="internButton" destination="8nP-Wl-XyN" id="x1u-hD-qUg"/>
+                        <outlet property="internDetails" destination="m21-r7-WE6" id="KUL-JP-7WR"/>
+                        <outlet property="secretaryButton" destination="l6K-ub-Cy3" id="vV2-G0-B4O"/>
+                        <outlet property="secretaryDetails" destination="aql-gj-Wwu" id="Hny-TG-3Sl"/>
+                        <outlet property="studentSupervisorButton" destination="Afm-dF-9gL" id="Te1-CI-3tu"/>
+                        <outlet property="studentSupervisorDetails" destination="RWv-NI-RQg" id="OHY-DN-MTl"/>
+                        <outlet property="webDeveloperButton" destination="V0l-3m-A7q" id="4z7-Em-tea"/>
+                        <outlet property="webDeveloperDetails" destination="w3s-y2-RkX" id="AOI-VI-1bm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6T-5z-fXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1203" y="18"/>
+            <point key="canvasLocation" x="1539" y="47"/>
+        </scene>
+        <!--Easter Egg View Controller-->
+        <scene sceneID="gYW-i7-Qfx">
+            <objects>
+                <viewController id="ZtF-mW-6X3" customClass="EasterEggViewController" customModule="glow2015" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b0E-Dy-qrM"/>
+                        <viewControllerLayoutGuide type="bottom" id="PA5-f3-Dyr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HBd-1Q-dOM">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HAHAHAHA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9K-dB-9TC">
+                                <rect key="frame" x="20" y="28" width="728" height="114"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PfT-lF-K62">
+                                <rect key="frame" x="20" y="251" width="728" height="243"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">DO YOU NOTICE ME WHEN I TROD THIS UNEASY JOURNEY
+OF SUCH COMPLEX AND WICKED WAYS; 
+DID YOU SEE ME WAY BEFORE I GOT LOST IN THEM? 
+I HAVE IGNORANCE THAT BURDENS MY SOUL 
+AND TROUBLES MY HEART – DEEPLY, 
+THAT, I NEED MORE THAN RELIGION TO CLEANSE MY SOUL
+BECAUSE EDUCATION IS BASICALLY A LIE.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thabani Khumalo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhZ-Lh-5K3">
+                                <rect key="frame" x="611" y="502" width="137" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Education Is A Lie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gi5-Xm-zP3">
+                                <rect key="frame" x="20" y="202" width="728" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzE-Cn-O41">
+                                <rect key="frame" x="361" y="974" width="46" height="30"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="closeSelf:" destination="ZtF-mW-6X3" eventType="touchUpInside" id="2n2-VC-ROR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Df-QV-THb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2383" y="47"/>
         </scene>
         <!--General-->
         <scene sceneID="xID-jc-bex">
             <objects>
-                <viewController title="General" id="pjN-P9-92Z" sceneMemberID="viewController">
+                <viewController title="General" id="pjN-P9-92Z" customClass="GeneralViewController" customModule="glow2015" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ijJ-dd-fJ4"/>
                         <viewControllerLayoutGuide type="bottom" id="wuI-O3-6GV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WSW-k8-qom">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lMX-Ef-qLc">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="server.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LvH-mw-i26">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="510"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="LvH-mw-i26" secondAttribute="height" multiplier="1701:1130" id="dDv-Cq-pyy"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cCB-PD-nq4">
+                                        <rect key="frame" x="0.0" y="510" width="768" height="514"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Why the new Site
+A few weeks ago, wordpress got an update changing a few things in it’s API what caused a few of our plugins to break. This resulted in things like not being able to login, secure pages you should only be able to see if you are a member to be public, etc.
+This mostly happened because we use a lot of plugins that are later edited and customized to fit our needs and to avoid this in the future, the web committee has decided to start again from scratch: creating all plugins themselves (optimized for Student Sports Clubs) and when finished these plugins will be published to WordPress so other Student Sport Clubs can use them!
+
+Current Status
+Currently, only the theme and the events plugin are somewhat operational.
+
+The Theme
+
+The theme is currently dynamic enough to use on resolutions between 400px and 1920px width. This means that it is usable for both mobile and desktop use.
+However, the theme is not even close to be ready: the lists (posts list etc) are terrible, when on a width below 783px (mobile) the site branding is hidden, the menu for mobile is very limited, the sidebar does not disappear if it is empty, etc.
+We are going to work on this, but for now it does not have priority.
+
+The Events Plugin
+
+This plugin is created to easily manage registration for events. This plugin is currently operational, but the functionality is very basic (locations are not yet working, managing pending events is currently manual, etc).
+We won’t be working on this until after the 16th of January (to avoid losing registrations for the upcoming Nationwide Student Survival Weekend (if you haven’t registered yet, do so, it will be awesome!).</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="LvH-mw-i26" firstAttribute="leading" secondItem="lMX-Ef-qLc" secondAttribute="leading" id="Or9-0P-Sg0"/>
+                                    <constraint firstItem="LvH-mw-i26" firstAttribute="top" secondItem="lMX-Ef-qLc" secondAttribute="top" id="dlH-wF-ldw"/>
+                                    <constraint firstAttribute="trailing" secondItem="LvH-mw-i26" secondAttribute="trailing" id="kWp-dG-ITW"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration" hint="ve"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="lMX-Ef-qLc" secondAttribute="bottom" id="7DH-jD-yGb"/>
+                            <constraint firstItem="lMX-Ef-qLc" firstAttribute="top" secondItem="WSW-k8-qom" secondAttribute="top" id="dOQ-jT-pOo"/>
+                            <constraint firstAttribute="trailing" secondItem="lMX-Ef-qLc" secondAttribute="trailing" id="hek-vY-Ut3"/>
+                            <constraint firstItem="lMX-Ef-qLc" firstAttribute="leading" secondItem="WSW-k8-qom" secondAttribute="leading" id="xLZ-mo-z5r"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="General" id="x4f-Vz-AFg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jxH-sr-t51" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1203" y="-661"/>
+            <point key="canvasLocation" x="1539" y="-1129"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4WR-jj-XGb">
@@ -102,7 +530,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rBU-oD-AgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="25" y="162"/>
+            <point key="canvasLocation" x="32" y="276.48000000000002"/>
         </scene>
         <!--Details-->
         <scene sceneID="t5U-5J-Gdz">
@@ -121,7 +549,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eit-iL-fbD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1203" y="695"/>
+            <point key="canvasLocation" x="1539.8400000000001" y="1186.1333333333334"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ProfilePicture.jpg" width="400" height="400"/>
+        <image name="server.jpg" width="1701" height="1130"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="PEK-YV-AhZ"/>
+    </inferredMetricsTieBreakers>
 </document>
